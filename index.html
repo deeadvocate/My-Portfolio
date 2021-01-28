@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile l Adebanjo Israel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+  <!-- The NavBar -->
+    <div class="nav">
+
+      <div class="nav-btn" onclick="navFunc()">
+          <div class="nav-button"></div>
+          <div class="nav-button"></div>
+          <div class="nav-button"></div>
+      </div>
+      <div class="main-nav"> My Profile </div>
+      <div class="social-icon">
+        <li ><a href="www.facebook.com" class="social-link"> <i class="fa-facebook fb fab"></i></a></li>
+       <li> <a href="wa.me/+2348083476282" class="social-link"> <i class="fa-whatsapp whatsapp fab"></i></a></li>
+       <li> <a href="#" class="social-link"> <i class="fa-github github fab"></i></a></li>
+       <li> <a href="#" class="social-link"> <i class="fa-envelope envelope fas"></i></a></li>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+    <ul>
+      <li><a onclick="displayFunc()" href="#myCarousel"> Home </a></li>
+      <li><a onclick="displayFunc()" href="#aboutme"> About Me </a></li>
+      <li><a onclick="displayFunc()" href="#features"> Features</a></li>
+      <li><a onclick="displayFunc()" href="#contact">  Contact me  </a></li>
+    </ul>
+    </aside>
+
+<!-- The Carousel -->
+  
+      <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item one active" data-interval="1000">
+            <img class="first-slide" src="img/israel 1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item two"  data-interval="1000">
+            <img class="second-slide" src="/img/code img5.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item three" data-interval="1000">
+            <img class="third-slide" src="img/israel 2.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item four" data-interval="1000">
+            <img class="fourth-slide" src="img/progimg1.jpg" alt="Fourth slide">
+          </div>
+          <div class="carousel-item five" data-interval="1000">
+            <img class="fifth-slide" src="img/code img5.jpg" alt="Fifth slide">
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only visually-hidden">Next</span>
+        </a>
+      </div>  
+
+
+      
+<!-- About Me -->
+    <div class="about-me" id="aboutme">
+        <div class="primary-header about-header"> About Me </div>
+        <p class="intro">My name is Adebanjo Israel, i am a young full stack programmer, i have knowledge in Html, Css, Bootsrap, Sass, Javascipt and Php.
+          I love reading, travelling, Coding and anything technology related, i am also a die-hard Chelsea Fan(<em> just so you can know </em></em>).
+            I work diligently and give my 100% to any project assigned to me.
+
+      </p>
+    </div>
+        
+        
+<!-- The features -->
+    <div id="features" class="features">
+
+        <div class=" primary-header features-header"> What i offer </div>
+
+        <div class="container">
+            
+            <div class="feature-box">
+                <div class="feature-box_header">Website Development</div>
+               <p> I create different kind of websites such as blog,E-commerce Website, Landing Pages and other types of sites </p></div>
+
+            <div class="feature-box">
+              <div class="feature-box_header">Apps Development</div>
+               <p> I create mobile apps for andrioid and iOS devices, i also create desktop apps for windows, Linux and Mac </p></div>
+
+            <div class="feature-box">
+              <div class="feature-box_header">UI/UX Designs</div>
+               <p> I also design and analyze the user experience on a Website  </p></div>
+
+            <div class="feature-box">
+              <div class="feature-box_header">Virtual Tutorial</div>  
+              <p> I also teach coding and programming virtually using platforms such as Udemy. </p></div>
+                           
+        </div>
+      </div>
+
+<!-- Collabo -->
+
+      <div class="collabo">
+          <div class="bg-video">
+        <video src="img/Code_flythough_loop_01_Videvo.mov" autoplay loop muted >oops, you have to upgrade your browser</video>
+      </div>
+      <div class="bg-video1">
+        <video src="img/Code_flythough_loop_01_Videvo.mov" autoplay loop muted >oops, you have to upgrade your browser</video>
+      </div>
+    </div>
+
+    <div class="video-text">
+      <h3 class="text-header">Do you need a partner on a project?</h3>
+    </div>
+
+  <div id="contact" class="contact-me">         
+             <div class="card-body">
+                    <form action="index.php" method="post">
+                      <h2 class="text-center contact-header primary-header"> Get in touch </h2> 
+                     
+  
+                <input type="text" name="UName" placeholder="Your Name" class="name-input input-field">
+                <input type="email" name="Email" placeholder="Email" class="mail-input input-field">
+                <input type="text" name="Subject" placeholder="Subject" class="input-field ">
+                <textarea name="msg" class="input-field msg-field" placeholder="message-input"></textarea>
+                <button class="btn btn-submit" name="btn-send"> Send </button>
+                    </form>
+                </div>
+      </div>          
+
+
+
+  <footer>
+    <div class="footer">
+        <div class="footer-text">
+         <p> <a href="#" class="footer-link">Home</a>   /
+          <a href="#" class="footer-link">About</a>  /  
+          <a href="#" class="footer-link">Contact Me</a> </p>
+       <p> <em> &COPY; Adebanjo Israel 2021 </em>  </p>
+      </div>
+    </div>
+  </footer>
+       
+    
+
+<script src="/bootstrap.min.js"></script>
+ <script src="/index.js"></script>   
+</body>
+</html>

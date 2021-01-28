@@ -1,0 +1,410 @@
+/* Basic Styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --primarycolor : #2154EC;
+    --secondarycolor : #f4f4f4;
+    --white : #ffffff;
+    --dark : #1b1b1b;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+   
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Basic Variable */
+    
+
+.primary-header{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;   
+    transition: all .3s ease-in; 
+}
+
+
+.primary-header:hover{
+   transform: translate(1rem);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* THE NAV BAR */
+
+.nav{
+    background-color: var(--secondarycolor);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 6rem;
+}
+.nav-btn{
+    margin-left: 5vw;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+
+.nav-button{
+    background-color: var(--dark);
+    width: 3rem;
+    height: .3rem;
+    margin-bottom: .5rem;
+}
+
+.main-nav {
+    color: var(--primarycolor) ;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 20vw;
+}
+
+li {
+    display: inline;
+}
+
+.social-icon {
+    position: absolute;
+    right: 0;
+    top: 10;
+    margin-right: .5rem;
+}
+
+.social-link .fab, .fas{
+    font-size: 2.7rem;
+    margin-top: 1rem;
+    transition: all .3s ease-in;
+    
+}
+.fab:hover, .fas:hover{
+    transform: scale(1.4);
+}
+.fb{
+    color: blue;
+}
+
+.whatsapp {
+    color: green;
+}
+
+.github {
+    color: black;
+}
+
+.envelope {
+    color: #4285d4;
+}
+
+.sidebar{
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+    height: calc(100vh - 6rem) ;
+    overflow: hidden;
+    font-size: 2rem;
+    visibility: hidden;
+  
+    
+    
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+  
+    
+}
+.sidebar li {
+    display: block;
+    text-decoration: none;
+    line-height: 19vh;
+    margin-left: 35vw;   
+}
+
+
+.sidebar a {
+    color: var(--secondarycolor);
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+   
+    
+}
+
+/* THE HEADER */
+.carousel{
+    width: 100%;
+    margin: auto;
+    
+}
+
+.carousel-inner{
+    height: 80vh;
+    clip-path: circle(100% at 50% -5%);
+    z-index: 100;
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 100;
+}
+
+
+
+
+/* ABOUT US */
+
+
+
+.about-me{
+    width: 80%;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+.about-header{
+    color: var(--primarycolor);
+    margin-bottom: 1rem;
+}
+.intro{
+    font-size: 2rem;
+}
+
+
+/* Features */
+.features {
+    padding-top: 30rem;
+    padding-bottom: 10rem;
+    background-color: var(--primarycolor);
+    margin-top: 10rem;
+    color: var(--white);
+    transform: skewY(-15deg);
+    position: relative;   
+      }
+
+.features > * {
+    transform: skewY(15deg);
+}
+ 
+.features-header{
+    color: var(--white);
+    margin-top: -25rem;   
+    margin-bottom: 1.6rem;
+}
+
+.container{
+  max-width: 115rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto ;
+  justify-content: center;
+}
+
+.feature-box{
+    background-color: rgba(255, 255, 255, 0.4);
+     color: var(--white) ;
+     margin-bottom: 2.6rem;
+     width: 25rem; 
+     margin-right: 1.5rem;
+     font-size: 1.5rem;
+     height: 25rem;
+     padding: 2rem;    
+     }
+
+
+.feature-box_header {
+    font-size: 2.5rem;
+    font-family: serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.features p {
+        display: block;
+    }
+
+
+/* BG VIDEO COLLABO */
+
+.collabo{
+    margin-top: -15rem;
+    position: relative;
+    z-index: -1;
+    height: 70vh;
+    opacity: .4;
+}
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 1;
+}
+
+.bg-video1{
+    position: absolute;
+    bottom: -40%;
+    left: 0;   
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity:1 ;
+    z-index: 1;
+}
+
+video{
+    width: 100%;
+    height: 140vh;
+    margin-top: -25rem;
+}
+
+.video-text {
+    z-index: 10000000;
+    color: var(--dark);
+    opacity: 1;
+    font-weight: bold;
+    font-size: 4rem;
+    position: absolute;
+    top: 40;
+    left: 0;
+}
+
+/* Contact Me */
+
+
+ .contact-me{
+    display: block;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 5px;
+	background-color:var(--secondarycolor);
+	 
+ }
+
+ .contact-header{
+    color: var(--primarycolor);   
+ }
+input{
+    display: block;
+}
+.input-field{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    height: 3rem;
+    margin: 1.5rem auto;
+    width: 80%;
+	padding-top: 10px;
+	padding-bottom:10px; 
+	background-color:transparent;
+	border:2px solid var(--primarycolor);
+    font-size: 14px;
+    margin-left: 10vw;
+}
+
+::placeholder{
+    color: var(--dark);
+    text-align: center;
+}
+
+ textarea{
+	min-height: 100px;
+    font-size: 14px;
+}
+
+.msg-field {
+    margin-left: 10vw;
+}
+
+
+
+.btn-submit{
+	margin-top: 10px;
+	width: 80%;
+	padding-top: 10px;
+	padding-bottom:10px; 
+	color: var(--white);
+	background-color: var(--primarycolor);
+    border:none;
+    margin-left: 10vw;
+    font-size: 1rem;
+    
+}
+
+
+
+/* Footer */
+
+.footer{
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+   
+}
+
+.footer-text p{
+    text-align: center;
+    font-size: 1.8rem;
+
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+
+/* Media QUERIES */
+
+@media screen and (max-width:450px) {
+    :root{
+        font-size: 50%;
+    }
+    .about-me{
+        margin-top: 1rem;
+    }
+
+    .feature-box{
+        margin-right: 10vw;
+        align-content: center;
+    }
+
+    .bg-video{
+        top: -20%;
+    }
+
+    .bg-video1 {
+        bottom: -20%;
+    }
+
+}
