@@ -182,7 +182,7 @@ img {
 .about-me{
     width: 80%;
     margin: auto;
-    margin-top: 1vh;
+    margin-top: 3rem;
 }
 
 .about-header{
@@ -301,7 +301,7 @@ video{
 
  .contact-me{
     display: block;
-	max-width: 600px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 15px;
 	border-radius: 5px;
@@ -385,6 +385,14 @@ input{
 
 
 /* Media QUERIES */
+
+
+@media screen and (max-width: 900) and (min-width: 520px){
+    body{
+      visibility: hidden;
+      
+  }   
+  }
 
 @media screen and (max-width:450px) {
     :root{
