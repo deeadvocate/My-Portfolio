@@ -1,0 +1,1 @@
+This website was built to showcase my skills and knowledge as a programmer, i used Html, Css, Bootsrap and AOS. It has been deployed at netlify @ adebanjoisrael.netlify.
